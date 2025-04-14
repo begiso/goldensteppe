@@ -74,7 +74,7 @@ export default function Header() {
           </div>
 
           <Link
-            href="#"
+            href="#contacts"
             className="bg-[#f08223] text-white px-4 py-2 rounded-full hover:bg-[#d87420] transition-colors text-sm whitespace-nowrap"
           >
             {t("buttons.bookTour")}

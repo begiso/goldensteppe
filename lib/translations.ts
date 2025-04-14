@@ -7,7 +7,7 @@ export const translations = {
       contacts: "Контакты",
     },
     buttons: {
-      bookTour: "Записаться на тур",
+      bookTour: "Бронирование",
       sendMessage: "Отправить сообщение",
       learnMore: "Подробнее о турах",
     },
@@ -92,7 +92,7 @@ export const translations = {
       contacts: "Contacts",
     },
     buttons: {
-      bookTour: "Book a Tour",
+      bookTour: "Booking",
       sendMessage: "Send Message",
       learnMore: "Learn More About Tours",
     },
@@ -177,7 +177,7 @@ export const translations = {
       contacts: "Kontaktlar",
     },
     buttons: {
-      bookTour: "Turga yozilish",
+      bookTour: "Bron qilish",
       sendMessage: "Xabar yuborish",
       learnMore: "Turlar haqida batafsil",
     },
