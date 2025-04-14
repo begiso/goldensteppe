@@ -14,7 +14,7 @@ export const translations = {
     hero: {
       title: "Туризм нового уровня",
       description:
-        "Мы предлагаем авторские маршруты по самым диким местам планеты: от горных вершин, от величественных гор до бескрайних степей.",
+        "Мы организуем авторские маршруты по самым живописным уголкам страны: от величественных гор до бескрайних степей.",
     },
     tours: {
       title: "Выберите идеальный тур — легко и с удовольствием",
@@ -99,7 +99,7 @@ export const translations = {
     hero: {
       title: "Tourism of a New Level",
       description:
-        "We offer unique routes to the wildest places on the planet: from mountain peaks to endless steppes.",
+        "We organize custom-made tours through the most scenic corners of the country — from majestic mountains to endless steppes.",
     },
     tours: {
       title: "Choose the Perfect Tour — Easily and with Pleasure",
@@ -184,7 +184,7 @@ export const translations = {
     hero: {
       title: "Yangi darajadagi turizm",
       description:
-        "Biz sayyoramizning eng yovvoyi joylariga noyob yo'nalishlarni taklif etamiz: tog' cho'qqilaridan to cheksiz dashtlargacha.",
+        "Biz mamlakatning eng goʻzal joylariga — ulkan togʻlardan to cheksiz dashtlargacha mualliflik marshrutlarini tashkil qilamiz.",
     },
     tours: {
       title: "Ideal turni tanlang — oson va zavq bilan",
