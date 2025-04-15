@@ -15,7 +15,7 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev === slideImages.length - 1 ? 0 : prev + 1))
-    }, 5000) // Меняем слайд каждые 5 секунд
+    }, 3000)
 
     return () => clearInterval(interval)
   }, [])
@@ -27,7 +27,7 @@ export default function HeroSection() {
         {slideImages.map((image, index) => (
           <div
             key={index}
-            className="absolute inset-0 bg-cover bg-center transition-opacity duration-800"
+            className="absolute inset-0 bg-cover bg-center transition-opacity duration-500"
             style={{
               backgroundImage: `url('${image}')`,
               opacity: currentSlide === index ? 1 : 0,
