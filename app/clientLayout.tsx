@@ -5,6 +5,7 @@ import { Manrope } from "next/font/google"
 import "./globals.css"
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext"
 import { useEffect, useState } from "react"
+import { ScrollToTop } from "@/components/ScrollToTop"
 
 const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
@@ -26,7 +27,12 @@ function RootLayoutContent({ children }: { children: React.ReactNode }) {
     }
   }, [language, mounted])
 
-  return <div className={`${manrope.variable} font-manrope`}>{children}</div>
+  return (
+    <div className={`${manrope.variable} font-manrope`}>
+      {children}
+      <ScrollToTop />
+    </div>
+  )
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
