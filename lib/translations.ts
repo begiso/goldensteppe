@@ -30,7 +30,7 @@ export const translations = {
       international: {
         title: "Международные туры",
         description:
-          "В любую точку мира. Только Турция, Египет, Дубай. Организуем поездку в любую страну — только скажите.",
+          "В любую точку мира. Турция, Египет, Дубай и.т.д Организуем поездку в любую страну — только скажите.",
       },
       custom: {
         title: "Индивидуальные маршруты",
@@ -117,7 +117,7 @@ export const translations = {
       international: {
         title: "International Tours",
         description:
-          "To any point in the world. Turkey, Egypt, Dubai. We organize trips to any country — just tell us.",
+          "To any point in the world. Turkey, Egypt, Dubai and more.. We organize trips to any country — just tell us.",
       },
       custom: {
         title: "Custom Routes",
@@ -205,7 +205,7 @@ export const translations = {
       international: {
         title: "Xalqaro turlar",
         description:
-          "Dunyoning istalgan nuqtasiga. Turkiya, Misr, Dubay. Istalgan mamlakatga sayohatni tashkil qilamiz — faqat ayting.",
+          "Dunyoning istalgan nuqtasiga. Turkiya, Misr, Dubay v.b. Istalgan mamlakatga sayohatni tashkil qilamiz — faqat ayting.",
       },
       custom: {
         title: "Individual yo'nalishlar",
