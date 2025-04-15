@@ -9,7 +9,7 @@ export default function BenefitsSection() {
 
   return (
     <section id="info" className="container mb-24">
-      <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-center mb-2">{t("benefits.title")}</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-2">{t("benefits.title")}</h2>
       <p className="text-center text-gray-600 mb-16">{t("benefits.description")}</p>
 
       <div className="flex flex-col md:flex-row gap-16 items-center">

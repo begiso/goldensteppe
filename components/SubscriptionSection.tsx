@@ -15,8 +15,8 @@ export default function SubscriptionSection() {
       >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative h-full flex flex-col justify-center items-center text-white text-center px-4 md:px-8">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">{t("subscribe.title")}</h2>
-          <p className="max-w-3xl text-lg md:text-xl mb-10 leading-relaxed">{t("subscribe.description")}</p>
+          <h2 className="text-2xl md:text-5xl font-bold mb-6">{t("subscribe.title")}</h2>
+          <p className="max-w-3xl text-md md:text-xl mb-10 leading-relaxed">{t("subscribe.description")}</p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Link
               href="https://instagram.com/goldensteppe"

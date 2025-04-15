@@ -62,13 +62,13 @@ export default function PopularDestinations() {
   }
 
   return (
-    <section className="rounded-3xl container mb-16 text-center p-20 bg-[#F8F5F3]">
-      <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4">{t("destinations.title")}</h2>
-      <p className="text-gray-600 mb-16 max-w-3xl mx-auto">{t("destinations.description")}</p>
+    <section className="rounded-3xl container mb-16 text-center p-8 md:p-20 bg-[#F8F5F3]">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">{t("destinations.title")}</h2>
+      <p className="text-gray-600 mb-8 md:mb-16 max-w-3xl mx-auto">{t("destinations.description")}</p>
 
       <div className="flex flex-wrap justify-center gap-6">
         {destinations.map((destination, index) => (
-          <Link href="#" key={index} className="group w-[140px] sm:w-[150px] md:w-[200px] lg:w-[280px]">
+          <Link href="#" key={index} className="group w-[150px] md:w-[200px] lg:w-[280px]">
             <div className="relative w-full aspect-square rounded-full overflow-hidden">
               <Image
                 src={destination.image || "/placeholder.svg"}

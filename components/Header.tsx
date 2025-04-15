@@ -48,7 +48,7 @@ export default function Header() {
   return (
     <header className="py-3 bg-white sticky top-0 z-50">
       <div className="container flex items-center justify-between">
-        <ScrollLink href="#hero" className="text-primary font-bold text-xl">
+        <ScrollLink href="#hero" className="text-primary font-bold text-lg md:text-2xl">
           Golden steppe
         </ScrollLink>
 
@@ -97,7 +97,7 @@ export default function Header() {
 
           <ScrollLink
             href="#contacts"
-            className="bg-[#f08223] text-white px-6 py-3 rounded-full hover:bg-[#d87420] transition-colors text-base font-medium"
+            className="bg-[#f08223] text-white px-6 py-3 rounded-full hover:bg-[#d87420] transition-colors text-base font-medium hidden md:block"
           >
             {t("buttons.bookTour")}
           </ScrollLink>

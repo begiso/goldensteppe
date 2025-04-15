@@ -9,14 +9,13 @@ export default function TourTypes() {
   return (
     <section id="tours" className="container mb-12">
       <div className="flex flex-col md:flex-row justify-between mb-12 gap-4">
-        <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-0 md:max-w-lg">{t("tours.title")}</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold md:max-w-lg">{t("tours.title")}</h2>
         <p className="text-gray-600 md:max-w-2xl">{t("tours.description")}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
         <div className="overflow-hidden">
-          <div className="relative h-72">
+          <div className="relative h-52 md:h-72">
             <Image src="/images/domestic-tours.jpg" alt={t("tours.domestic.title")} fill className="object-cover rounded-lg" />
           </div>
           <div className="py-4">
@@ -26,7 +25,7 @@ export default function TourTypes() {
         </div>
 
         <div className="overflow-hidden">
-          <div className="relative h-72">
+          <div className="relative h-52 md:h-72">
             <Image src="/images/international-tours.jpg"
               alt={t("tours.international.title")} fill className="object-cover rounded-lg" />
           </div>
@@ -37,7 +36,7 @@ export default function TourTypes() {
         </div>
         
         <div className="overflow-hidden">
-          <div className="relative h-72">
+          <div className="relative h-52 md:h-72">
             <Image src="/images/custom-tours.jpg" alt={t("tours.custom.title")} fill className="object-cover rounded-lg" />
           </div>
           <div className="py-4">

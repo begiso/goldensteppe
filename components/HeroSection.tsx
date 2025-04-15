@@ -22,7 +22,7 @@ export default function HeroSection() {
 
   return (
     <section className="container mb-16">
-      <div id="hero" className="relative h-[700px] md:h-[800px] bg-cover bg-center rounded-xl overflow-hidden">
+      <div id="hero" className="relative h-[600px] md:h-[800px] bg-cover bg-center rounded-xl overflow-hidden">
         {/* Слайдер с изображениями */}
         {slideImages.map((image, index) => (
           <div
