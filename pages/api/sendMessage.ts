@@ -17,10 +17,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 💬 Сообщение: ${message}
   `;
 
-//   const token = process.env.TELEGRAM_BOT_TOKEN;
-  const token = '6749278910:AAEhTHY-AuB6PZxqs71ryiPEBk3rykSSSLk'
-//   const chat_id = process.env.TELEGRAM_CHAT_ID;
-  const chat_id = '-1002619902931';
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chat_id = process.env.TELEGRAM_CHAT_ID;
 
   const telegramUrl = `https://api.telegram.org/bot${token}/sendMessage`;
 

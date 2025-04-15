@@ -11,6 +11,7 @@ export const translations = {
       book: "Забронировать",
       sendMessage: "Отправить сообщение",
       learnMore: "Узнать подробнее",
+      sending: "Отправка...",
     },
     hero: {
       title: "Туризм нового уровня",
@@ -34,7 +35,8 @@ export const translations = {
       },
       custom: {
         title: "Индивидуальные маршруты",
-        description: "Расскажите нам — что интересно, мы создадим идеальный маршрут, учитывая все пожелания.",
+        description:
+          "Расскажите нам — что интересно, мы создадим идеальный маршрут, учитывая все пожелания.",
       },
     },
     destinations: {
@@ -44,7 +46,8 @@ export const translations = {
     },
     benefits: {
       title: "С Golden Steppe ваши впечатления — навсегда в сердце",
-      description: "Мы создаем не просто туры, а воспоминания, к которым хочется возвращаться",
+      description:
+        "Мы создаем не просто туры, а воспоминания, к которым хочется возвращаться",
       guides: {
         title: "Опытные гиды и тревел-эксперты",
         description:
@@ -52,15 +55,18 @@ export const translations = {
       },
       booking: {
         title: "Удобное бронирование",
-        description: "Забронируйте тур всего за пару кликов — быстро, удобно и без лишних хлопот.",
+        description:
+          "Забронируйте тур всего за пару кликов — быстро, удобно и без лишних хлопот.",
       },
       service: {
         title: "Сервис на высшем уровне",
-        description: "Мы заботимся о вас на каждом этапе — от первого запроса до возвращения домой.",
+        description:
+          "Мы заботимся о вас на каждом этапе — от первого запроса до возвращения домой.",
       },
       safety: {
         title: "Безопасность и надёжность",
-        description: "Ваш труд заслуживает, а ваша безопасность и комфорт — наш приоритет.",
+        description:
+          "Ваш труд заслуживает, а ваша безопасность и комфорт — наш приоритет.",
       },
     },
     subscribe: {
@@ -82,6 +88,12 @@ export const translations = {
         message: "Сообщение",
       },
     },
+    form: {
+      success: "Сообщение успешно отправлено!",
+      error: "Ошибка при отправке. Попробуйте снова.",
+      generalError: "Что-то пошло не так.",
+      tooLong: "Сообщение слишком длинное.",
+    },
     footer: {
       copyright: "© 2025. Все права защищены.",
     },
@@ -98,6 +110,7 @@ export const translations = {
       book: "Book Now",
       sendMessage: "Send Message",
       learnMore: "Learn More",
+      sending: "Sending...",
     },
     hero: {
       title: "Tourism of a New Level",
@@ -132,7 +145,8 @@ export const translations = {
     },
     benefits: {
       title: "With Golden Steppe, Your Impressions Are Forever in Your Heart",
-      description: "We create not just tours, but memories you want to return to",
+      description:
+        "We create not just tours, but memories you want to return to",
       guides: {
         title: "Experienced Guides and Travel Experts",
         description:
@@ -140,15 +154,18 @@ export const translations = {
       },
       booking: {
         title: "Convenient Booking",
-        description: "Book a tour in just a few clicks — fast, convenient, and hassle-free.",
+        description:
+          "Book a tour in just a few clicks — fast, convenient, and hassle-free.",
       },
       service: {
         title: "Top-Level Service",
-        description: "We take care of you at every stage — from the first request to returning home.",
+        description:
+          "We take care of you at every stage — from the first request to returning home.",
       },
       safety: {
         title: "Safety and Reliability",
-        description: "Your work deserves it, and your safety and comfort are our priority.",
+        description:
+          "Your work deserves it, and your safety and comfort are our priority.",
       },
     },
     subscribe: {
@@ -170,6 +187,12 @@ export const translations = {
         message: "Message",
       },
     },
+    form: {
+      success: "✅ Your message was successfully sent!",
+      error: "❌ Failed to send the message.",
+      generalError: "⚠️ Something went wrong.",
+      tooLong: "Your message is too long. Please shorten it.",
+    },
     footer: {
       copyright: "© 2025. All Rights Reserved.",
     },
@@ -186,6 +209,7 @@ export const translations = {
       book: "Bron qilish",
       sendMessage: "Xabar yuborish",
       learnMore: "Batafsil ma'lumot",
+      sending: "Yuborilmoqda...",
     },
     hero: {
       title: "Yangi darajadagi turizm",
@@ -220,7 +244,8 @@ export const translations = {
     },
     benefits: {
       title: "Golden Steppe bilan taassurotlaringiz doimo qalbingizda",
-      description: "Biz shunchaki turlar emas, balki qaytishni xohlaydigan xotiralarni yaratamiz",
+      description:
+        "Biz shunchaki turlar emas, balki qaytishni xohlaydigan xotiralarni yaratamiz",
       guides: {
         title: "Tajribali gidlar va sayohat ekspertlari",
         description:
@@ -228,15 +253,18 @@ export const translations = {
       },
       booking: {
         title: "Qulay bron qilish",
-        description: "Bir necha marta bosish orqali turni bron qiling — tez, qulay va muammosiz.",
+        description:
+          "Bir necha marta bosish orqali turni bron qiling — tez, qulay va muammosiz.",
       },
       service: {
         title: "Yuqori darajadagi xizmat",
-        description: "Biz sizni har bir bosqichda g'amxo'rlik qilamiz — birinchi so'rovdan uyga qaytishgacha.",
+        description:
+          "Biz sizni har bir bosqichda g'amxo'rlik qilamiz — birinchi so'rovdan uyga qaytishgacha.",
       },
       safety: {
         title: "Xavfsizlik va ishonchlilik",
-        description: "Ishingiz bunga loyiq, va sizning xavfsizligingiz va qulayligingiz bizning ustuvor vazifamizdir.",
+        description:
+          "Ishingiz bunga loyiq, va sizning xavfsizligingiz va qulayligingiz bizning ustuvor vazifamizdir.",
       },
     },
     subscribe: {
@@ -258,10 +286,16 @@ export const translations = {
         message: "Xabar",
       },
     },
+    form: {
+      success: "✅ Xabaringiz muvaffaqiyatli yuborildi!",
+      error: "❌ Xabar yuborishda xatolik yuz berdi.",
+      generalError: "⚠️ Noma’lum xatolik yuz berdi.",
+      tooLong: "Xabar juda uzun. Iltimos, qisqaroq yozing.",
+    },
     footer: {
       copyright: "© 2025. Barcha huquqlar himoyalangan.",
     },
   },
-}
+};
 
-export type Language = keyof typeof translations
+export type Language = keyof typeof translations;
