@@ -7,14 +7,16 @@ export const translations = {
       contacts: "Контакты",
     },
     buttons: {
-      bookTour: "Бронирование",
+      bookTour: "Забронировать",
+      book: "Забронировать",
       sendMessage: "Отправить сообщение",
-      learnMore: "Подробнее о турах",
+      learnMore: "Узнать подробнее",
     },
     hero: {
       title: "Туризм нового уровня",
       description:
-        "Мы организуем авторские маршруты по самым живописным уголкам страны: от величественных гор до бескрайних степей.",
+        "Мы организуем авторские маршруты по самым живописным уголкам страны: от величественных гор до бескрайних степей",
+      scrollDown: "Прокрутите вниз",
     },
     tours: {
       title: "Выберите идеальный тур — легко и с удовольствием",
@@ -62,9 +64,9 @@ export const translations = {
       },
     },
     subscribe: {
-      title: "Хочешь быть в курсе лучших туров?",
+      title: "Хотите быть в курсе лучших предложений?",
       description:
-        "Подписывайся на нас в социальных сетях, чтобы не пропустить специальные акции, новые маршруты и вдохновляющие путешествия!",
+        "Подписывайся на нас в социальных сетях, чтобы не пропустить спецпредложения, новые маршруты и вдохновляющие путешествия!",
     },
     contact: {
       title: "Свяжитесь с нами",
@@ -81,7 +83,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: "© Copyright 2023. Все права защищены.",
+      copyright: "© 2025. Все права защищены.",
     },
   },
   en: {
@@ -93,13 +95,15 @@ export const translations = {
     },
     buttons: {
       bookTour: "Booking",
+      book: "Book Now",
       sendMessage: "Send Message",
-      learnMore: "Learn More About Tours",
+      learnMore: "Learn More",
     },
     hero: {
       title: "Tourism of a New Level",
       description:
-        "We organize custom-made tours through the most scenic corners of the country — from majestic mountains to endless steppes.",
+        "We organize custom-made tours through the most scenic corners of the country — from majestic mountains to endless steppes",
+      scrollDown: "Scroll Down",
     },
     tours: {
       title: "Choose the Perfect Tour — Easily and with Pleasure",
@@ -148,8 +152,9 @@ export const translations = {
       },
     },
     subscribe: {
-      title: "Want to Stay Updated on the Best Tours?",
-      description: "Follow us on social media to not miss special offers, new routes, and inspiring journeys!",
+      title: "Want to Stay Updated on the Best Offers?",
+      description:
+        "Follow us on social media to stay updated on special offers, new routes, and inspiring journeys!",
     },
     contact: {
       title: "Contact Us",
@@ -166,7 +171,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: "© Copyright 2023. All Rights Reserved.",
+      copyright: "© 2025. All Rights Reserved.",
     },
   },
   uz: {
@@ -178,13 +183,15 @@ export const translations = {
     },
     buttons: {
       bookTour: "Bron qilish",
+      book: "Bron qilish",
       sendMessage: "Xabar yuborish",
-      learnMore: "Turlar haqida batafsil",
+      learnMore: "Batafsil ma'lumot",
     },
     hero: {
       title: "Yangi darajadagi turizm",
       description:
         "Biz mamlakatning eng goʻzal joylariga — ulkan togʻlardan to cheksiz dashtlargacha mualliflik marshrutlarini tashkil qilamiz.",
+      scrollDown: "Pastga aylantiring",
     },
     tours: {
       title: "Ideal turni tanlang — oson va zavq bilan",
@@ -233,9 +240,9 @@ export const translations = {
       },
     },
     subscribe: {
-      title: "Eng yaxshi turlar haqida xabardor bo'lishni xohlaysizmi?",
+      title: "Eng yaxshi takliflardan xabardor bo'lishni xohlaysizmi?",
       description:
-        "Maxsus takliflar, yangi yo'nalishlar va ilhomlantiruvchi sayohatlarni o'tkazib yubormaslik uchun bizni ijtimoiy tarmoqlarda kuzating!",
+        "Bizning ijtimoiy tarmoqlarimizga obuna bo‘ling — maxsus takliflar, yangi marshrutlar va ilhomlantiruvchi sayohatlarni o‘tkazib yubormang!",
     },
     contact: {
       title: "Biz bilan bog'laning",
@@ -252,7 +259,7 @@ export const translations = {
       },
     },
     footer: {
-      copyright: "© 2023 yil. Barcha huquqlar himoyalangan.",
+      copyright: "© 2025. Barcha huquqlar himoyalangan.",
     },
   },
 }

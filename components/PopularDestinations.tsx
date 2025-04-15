@@ -7,31 +7,34 @@ import { useLanguage } from "@/contexts/LanguageContext"
 // Объект с переводами названий направлений
 const destinationTranslations = {
   ru: {
-    "Северный Кавказ": "Северный Кавказ",
+    Самарканд: "Самарканд",
     Бухара: "Бухара",
     Хива: "Хива",
     Ташкент: "Ташкент",
-    "Чарынский каньон": "Чарынский каньон",
+    Каракалпакстан: "Каракалпакстан",
+    Дубай: "Дубай",
     Турция: "Турция",
     Грузия: "Грузия",
     Египет: "Египет",
   },
   en: {
-    "Северный Кавказ": "North Caucasus",
+    Самарканд: "Samarkand",
     Бухара: "Bukhara",
     Хива: "Khiva",
     Ташкент: "Tashkent",
-    "Чарынский каньон": "Charyn Canyon",
+    Каракалпакстан: "Karakalpakstan",
+    Дубай: "Dubai",
     Турция: "Turkey",
     Грузия: "Georgia",
     Египет: "Egypt",
   },
   uz: {
-    "Северный Кавказ": "Shimoliy Kavkaz",
+    Самарканд: "Samarqand",
     Бухара: "Buxoro",
     Хива: "Xiva",
     Ташкент: "Toshkent",
-    "Чарынский каньон": "Charin kanyoni",
+    Каракалпакстан: "Qoraqalpog'iston",
+    Дубай: "Dubay",
     Турция: "Turkiya",
     Грузия: "Gruziya",
     Египет: "Misr",
@@ -39,14 +42,15 @@ const destinationTranslations = {
 }
 
 const destinations = [
-  { name: "Северный Кавказ", image: "/placeholder.svg?height=300&width=300" },
-  { name: "Бухара", image: "/placeholder.svg?height=300&width=300" },
-  { name: "Хива", image: "/placeholder.svg?height=300&width=300" },
-  { name: "Ташкент", image: "/placeholder.svg?height=300&width=300" },
-  { name: "Чарынский каньон", image: "/placeholder.svg?height=300&width=300" },
-  { name: "Турция", image: "/placeholder.svg?height=300&width=300" },
-  { name: "Грузия", image: "/placeholder.svg?height=300&width=300" },
-  { name: "Египет", image: "/placeholder.svg?height=300&width=300" },
+  { name: "Самарканд", image: "/images/destinations/samarkand.png" },
+  { name: "Бухара", image: "/images/destinations/bukhara.png" },
+  { name: "Хива", image: "/images/destinations/khiva.png" },
+  { name: "Ташкент", image: "/images/destinations/tashkent.png" },
+  { name: "Каракалпакстан", image: "/images/destinations/karakalpakstan.png" },
+  { name: "Дубай", image: "/images/destinations/dubai.png" },
+  { name: "Турция", image: "/images/destinations/turkey.png" },
+  { name: "Грузия", image: "/images/destinations/georgia.png" },
+  { name: "Египет", image: "/images/destinations/egypt.png" },
 ]
 
 export default function PopularDestinations() {
@@ -58,13 +62,13 @@ export default function PopularDestinations() {
   }
 
   return (
-    <section className="container mb-16">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">{t("destinations.title")}</h2>
-      <p className="text-gray-600 mb-8 max-w-3xl">{t("destinations.description")}</p>
+    <section className="rounded-3xl container mb-16 text-center p-20 bg-[#F8F5F3]">
+      <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-4">{t("destinations.title")}</h2>
+      <p className="text-gray-600 mb-16 max-w-3xl mx-auto">{t("destinations.description")}</p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div className="flex flex-wrap justify-center gap-6">
         {destinations.map((destination, index) => (
-          <Link href="#" key={index} className="group">
+          <Link href="#" key={index} className="group w-[140px] sm:w-[150px] md:w-[200px] lg:w-[280px]">
             <div className="relative w-full aspect-square rounded-full overflow-hidden">
               <Image
                 src={destination.image || "/placeholder.svg"}
@@ -73,7 +77,9 @@ export default function PopularDestinations() {
                 className="object-cover transition-transform group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                <h3 className="text-white font-medium text-center">{getTranslatedName(destination.name)}</h3>
+                <h3 className="text-white font-semibold text-center px-2 text-base md:text-lg lg:text-2xl">
+                  {getTranslatedName(destination.name)}
+                </h3>
               </div>
             </div>
           </Link>

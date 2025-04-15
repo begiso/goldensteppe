@@ -1,16 +1,36 @@
 "use client"
 
 import Link from "next/link"
-import { Globe, ChevronDown } from "lucide-react"
+import { ChevronDown } from "lucide-react"
 import ScrollLink from "./ScrollLink"
 import { useLanguage } from "@/contexts/LanguageContext"
 import { useState } from "react"
 import type { Language } from "@/lib/translations"
 
+// Компонент для отображения флага
+const FlagIcon = ({ country }: { country: string }) => {
+  // Используем эмодзи флагов, которые отображаются как SVG в большинстве современных браузеров
+  const getFlagEmoji = (countryCode: string) => {
+    // Преобразуем код страны в региональные индикаторы Unicode
+    const codePoints = countryCode
+      .toUpperCase()
+      .split("")
+      .map((char) => 127397 + char.charCodeAt(0))
+
+    return String.fromCodePoint(...codePoints)
+  }
+
+  return (
+    <span className="text-lg" role="img" aria-label={`Flag of ${country}`}>
+      {getFlagEmoji(country)}
+    </span>
+  )
+}
+
 const languages = {
-  ru: "Русский",
-  en: "English",
-  uz: "O'zbek",
+  ru: { name: "Русский", code: "ru" },
+  en: { name: "English", code: "gb" },
+  uz: { name: "O'zbek", code: "uz" },
 }
 
 export default function Footer() {
@@ -52,24 +72,27 @@ export default function Footer() {
           <div className="flex items-center space-x-4">
             <div className="relative">
               <button
-                className="flex items-center space-x-1 text-sm cursor-pointer text-gray-300"
+                className="flex items-center space-x-2 text-sm cursor-pointer text-gray-300"
                 onClick={toggleLangMenu}
               >
-                <Globe className="w-4 h-4" />
-                <span>{languages[language]}</span>
+                <FlagIcon country={languages[language].code} />
+                <span>{languages[language].name}</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
 
               {isLangMenuOpen && (
                 <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 z-10">
-                  {Object.entries(languages).map(([code, name]) => (
+                  {Object.entries(languages).map(([code, { name, code: countryCode }]) => (
                     <button
                       key={code}
-                      className={`block w-full text-left px-4 py-2 text-sm ${
+                      className={`flex items-center w-full text-left px-4 py-2 text-sm ${
                         language === code ? "bg-gray-100 text-primary" : "text-gray-700 hover:bg-gray-50"
                       }`}
                       onClick={() => changeLang(code as Language)}
                     >
+                      <span className="mr-2">
+                        <FlagIcon country={countryCode} />
+                      </span>
                       {name}
                     </button>
                   ))}

@@ -8,15 +8,15 @@ export default function BenefitsSection() {
   const { t } = useLanguage()
 
   return (
-    <section id="info" className="container mb-16">
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-2">{t("benefits.title")}</h2>
-      <p className="text-center text-gray-600 mb-12">{t("benefits.description")}</p>
+    <section id="info" className="container mb-24">
+      <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-center mb-2">{t("benefits.title")}</h2>
+      <p className="text-center text-gray-600 mb-16">{t("benefits.description")}</p>
 
-      <div className="flex flex-col md:flex-row gap-8 items-center">
+      <div className="flex flex-col md:flex-row gap-16 items-center">
         <div className="md:w-2/5 relative">
           <div className="bg-primary rounded-3xl p-4 rotate-6">
-            <div className="relative h-80 w-full rounded-2xl overflow-hidden">
-              <Image src="/placeholder.svg?height=600&width=400" alt="Happy traveler" fill className="object-cover" />
+            <div className="relative h-80 md:w-full w-[80vw] rounded-2xl overflow-hidden">
+              <Image src="/images/benefits-map.jpeg" alt="Планирование маршрута" fill className="object-cover" />
             </div>
           </div>
         </div>

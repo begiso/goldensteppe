@@ -34,18 +34,24 @@ export default function ContactSection() {
 
         <div className="space-y-4">
           <div className="flex items-start gap-3">
-            <Phone className="w-5 h-5 text-primary mt-1" />
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-primary">
+              <Phone className="w-5 h-5" />
+            </div>
             <div>
               <p className="text-sm text-gray-500">{t("contact.phone")}</p>
-              <p className="font-medium">+998 (93) 376-56-65</p>
+              <p className="font-medium">+998 90 576 56 65</p>
             </div>
           </div>
 
           <div className="flex items-start gap-3">
-            <MapPin className="w-5 h-5 text-primary mt-1" />
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-primary">
+              <MapPin className="w-5 h-5" />
+            </div>
             <div>
               <p className="text-sm text-gray-500">{t("contact.address")}</p>
-              <p className="font-medium">г. Нукус, ул. Аллеке Досанова, 12, офис 34</p>
+              <p className="font-medium">
+                Республика Каракалпакстан, Город Нукус, Орнек МФЙ, Шоссе Узбекистан, Дом 38, 9 кв
+              </p>
             </div>
           </div>
         </div>
