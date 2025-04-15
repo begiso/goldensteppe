@@ -42,7 +42,7 @@ export default function HeroSection() {
         {/* Контент */}
         <div className="relative h-full flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8 z-20">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-black mb-6 text-white max-w-4xl">{t("hero.title")}</h1>
-          <p className="text-lg md:text-2xl text-white mb-10 max-w-3xl">{t("hero.description")}</p>
+          <p className="text-lg md:text-2xl text-white mb-6 md:mb-10 max-w-3xl">{t("hero.description")}</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <ScrollLink
               href="#contacts"

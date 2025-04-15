@@ -1,39 +1,30 @@
 "use client"
 
-import type React from "react"
+import Link from "next/link"
+import { useEffect } from "react"
 
 interface ScrollLinkProps {
   href: string
   children: React.ReactNode
   className?: string
+  onClick?: () => void // 👈 Добавляем onClick
 }
 
-export default function ScrollLink({ href, children, className = "" }: ScrollLinkProps) {
+export default function ScrollLink({ href, children, className, onClick }: ScrollLinkProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
 
-    const targetId = href.replace("#", "")
-    const element = document.getElementById(targetId)
-
-    if (element) {
-      // Если это hero секция, прокручиваем к самому верху
-      if (targetId === "hero") {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        })
-      } else {
-        // Для других секций учитываем высоту хедера
-        window.scrollTo({
-          top: element.offsetTop - 80,
-          behavior: "smooth",
-        })
-      }
+    const target = document.querySelector(href)
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" })
     }
+
+    // Вызов внешнего обработчика (например, закрытие меню)
+    if (onClick) onClick()
   }
 
   return (
-    <a href={href} onClick={handleClick} className={className}>
+    <a href={href} className={className} onClick={handleClick}>
       {children}
     </a>
   )
