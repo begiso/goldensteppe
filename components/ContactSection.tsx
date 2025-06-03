@@ -86,7 +86,8 @@ export default function ContactSection() {
             </div>
             <div>
               <p className="text-sm text-gray-500">{t("contact.phone")}</p>
-              <p className="font-medium">+998 90 576 56 65</p>
+              <p className="font-medium">+998 91 388 14 41</p>
+              <p className="font-medium">+998 91 393 14 41</p>
             </div>
           </div>
 
